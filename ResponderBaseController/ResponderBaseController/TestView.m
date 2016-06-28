@@ -10,8 +10,6 @@
 #import "NSObject+BaseController.h"
 #import "ViewControllerProtocol.h"
 
-#define C(instance, protocol, selector, message) if (instance && [instance respondsToSelector:selector]) {[(id<protocol>)(instance) message]; } else{  NSLog(@"the protocol method error: self.baseController:%@   cannot find selector:%@",NSStringFromClass([instance class]),NSStringFromSelector(selector));}
-
 
 @interface TestView ()
 

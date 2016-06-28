@@ -12,6 +12,7 @@
 @interface ViewController ()
 
 @property (nonatomic, strong) TestView *testView;
+@property (nonatomic, strong) UINavigationController *rootNavigationBar;
 
 @end
 
@@ -20,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.rootNavigationBar = [[UINavigationController alloc] initWithRootViewController:self];
     [self.view addSubview:self.testView];
 }
 
