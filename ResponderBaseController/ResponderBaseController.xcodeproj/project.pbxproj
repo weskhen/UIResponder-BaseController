@@ -13,8 +13,8 @@
 		AE4A17331D211976000288DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE4A17311D211976000288DF /* Main.storyboard */; };
 		AE4A17351D211976000288DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE4A17341D211976000288DF /* Assets.xcassets */; };
 		AE4A17381D211976000288DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE4A17361D211976000288DF /* LaunchScreen.storyboard */; };
-		AE4A17421D211A1D000288DF /* UIResponder+BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4A17411D211A1D000288DF /* UIResponder+BaseController.m */; };
 		AE4A17481D211B53000288DF /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4A17471D211B53000288DF /* TestView.m */; };
+		AE4A17831D2226C4000288DF /* NSObject+BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4A17821D2226C4000288DF /* NSObject+BaseController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,11 +28,11 @@
 		AE4A17341D211976000288DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE4A17371D211976000288DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE4A17391D211976000288DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE4A17401D211A1D000288DF /* UIResponder+BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+BaseController.h"; sourceTree = "<group>"; };
-		AE4A17411D211A1D000288DF /* UIResponder+BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+BaseController.m"; sourceTree = "<group>"; };
 		AE4A17461D211B53000288DF /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
 		AE4A17471D211B53000288DF /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
 		AE4A17491D211C8A000288DF /* ViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerProtocol.h; sourceTree = "<group>"; };
+		AE4A17811D2226C4000288DF /* NSObject+BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BaseController.h"; sourceTree = "<group>"; };
+		AE4A17821D2226C4000288DF /* NSObject+BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BaseController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 				AE4A172F1D211976000288DF /* ViewController.m */,
 				AE4A17461D211B53000288DF /* TestView.h */,
 				AE4A17471D211B53000288DF /* TestView.m */,
-				AE4A173F1D2119FF000288DF /* UIResponder+BaseController */,
+				AE4A17801D2226C4000288DF /* NSObject+BaseController */,
 				AE4A17311D211976000288DF /* Main.storyboard */,
 				AE4A17341D211976000288DF /* Assets.xcassets */,
 				AE4A17361D211976000288DF /* LaunchScreen.storyboard */,
@@ -90,13 +90,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AE4A173F1D2119FF000288DF /* UIResponder+BaseController */ = {
+		AE4A17801D2226C4000288DF /* NSObject+BaseController */ = {
 			isa = PBXGroup;
 			children = (
-				AE4A17401D211A1D000288DF /* UIResponder+BaseController.h */,
-				AE4A17411D211A1D000288DF /* UIResponder+BaseController.m */,
+				AE4A17811D2226C4000288DF /* NSObject+BaseController.h */,
+				AE4A17821D2226C4000288DF /* NSObject+BaseController.m */,
 			);
-			path = "UIResponder+BaseController";
+			path = "NSObject+BaseController";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,9 +170,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE4A17301D211976000288DF /* ViewController.m in Sources */,
-				AE4A17421D211A1D000288DF /* UIResponder+BaseController.m in Sources */,
 				AE4A17481D211B53000288DF /* TestView.m in Sources */,
 				AE4A172D1D211976000288DF /* AppDelegate.m in Sources */,
+				AE4A17831D2226C4000288DF /* NSObject+BaseController.m in Sources */,
 				AE4A172A1D211976000288DF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +322,7 @@
 				AE4A173E1D211976000288DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

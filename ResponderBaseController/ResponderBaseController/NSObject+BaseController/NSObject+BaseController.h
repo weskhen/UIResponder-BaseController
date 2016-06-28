@@ -1,16 +1,16 @@
 //
-//  UIResponder+BaseController.h
+//  NSObject+BaseController.h
 //  ResponderBaseController
 //
-//  Created by wujian on 6/27/16.
+//  Created by wujian on 6/28/16.
 //  Copyright © 2016 wesk痕. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 @class UIViewController;
 
-@interface UIResponder (BaseController)
+@interface NSObject (BaseController)
 
 @property (nonatomic, weak)  UIViewController *baseController;
 

@@ -7,8 +7,11 @@
 //
 
 #import "TestView.h"
-#import "UIResponder+BaseController.h"
+#import "NSObject+BaseController.h"
 #import "ViewControllerProtocol.h"
+
+#define C(instance, protocol, selector, message) if (instance && [instance respondsToSelector:selector]) {[(id<protocol>)(instance) message]; } else{  NSLog(@"the protocol method error: self.baseController:%@   cannot find selector:%@",NSStringFromClass([instance class]),NSStringFromSelector(selector));}
+
 
 @interface TestView ()
 
@@ -27,6 +30,7 @@
 
 - (void)layoutSubviews
 {
+    
     [super layoutSubviews];
     _testButton.frame = self.bounds;
 }
@@ -37,8 +41,9 @@
 //    if (self.baseController && [self.baseController respondsToSelector:@selector(testViewClicked)]) {
 //        [self.baseController performSelector:@selector(testViewClicked)];
 //    }
-    
-    [(id<ViewControllerProtocol>)self.baseController testViewClicked];
+
+
+    C(self.baseController, ViewControllerProtocol, @selector(testViewClicked), testViewClicked);
 }
 
 #pragma mark - setter
